@@ -2,7 +2,7 @@ import { FC, PropsWithChildren, ReactNode } from "react";
 
 const Header: FC<PropsWithChildren> = ({ children }) => {
     return (
-        <nav className={"bg-green-500"}>
+        <nav className="sticky top-0 z-50 bg-gradient-to-br from-emerald-600 to-green-400">
             <div className="max-w-[85rem] w-full mx-auto sm:flex sm:flex-row sm:justify-between sm:items-center sm:gap-x-3 py-3 px-4 sm:px-6 lg:px-8 text-[#ffff]">
                 {children}
             </div>
@@ -12,7 +12,7 @@ const Header: FC<PropsWithChildren> = ({ children }) => {
 
 const MobileHeader: FC = () => {
     return (
-        <div className="flex justify-between items-center gap-x-3">
+        <div className="flex justify-between items-center gap-x-3 px-2 md:px-0">
             <div className="grow">
                 <span className="font-semibold whitespace-nowrap dark:text-neutral-200">
                     Meet Our Team
@@ -56,7 +56,7 @@ const HeaderItemGroupContainer: FC<HeaderItemGroupProps> = ({ children }) => {
             id="hs-nav-secondary"
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
-            <div className="py-2 sm:py-0 flex flex-col sm:flex-row sm:justify-end gap-y-2 sm:gap-y-0 sm:gap-x-6">
+            <div className="p-2 sm:py-0 flex flex-col sm:flex-row sm:justify-end gap-y-2 sm:gap-y-0 sm:gap-x-6">
                 {children}
             </div>
         </div>
@@ -71,7 +71,7 @@ type HeaderItemProps = {
 const HeaderItem: FC<HeaderItemProps> = ({ text, link }) => {
     return (
         <a
-            className="font-medium  text-blue-600 focus:outline-none focus:text-blue-600 dark:text-blue-500 dark:focus:text-blue-500"
+            className="font-medium text-blue-600 focus:outline-none focus:text-blue-600 dark:text-blue-500 dark:focus:text-blue-500"
             href={link}
         >
             {text}
