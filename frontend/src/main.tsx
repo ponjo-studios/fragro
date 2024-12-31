@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import App from "@ui/App.tsx";
+import App from "./ui/App";
 
 export const router = createBrowserRouter([{ path: "*", element: <App /> }]);
 

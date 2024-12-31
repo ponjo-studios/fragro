@@ -30,8 +30,6 @@
       "@css/*": ["src/ui/css/*"],
       "@components/*": ["src/ui/components/*"],
       "@pages/*": ["src/ui/pages/*"],
-      "@backend/*": ["src/backend/*"],
-      "@stores/*": ["src/backend/stores/*"],
       "@hooks/*": ["src/hooks/*"]
     }
   },

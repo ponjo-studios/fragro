@@ -1,7 +1,8 @@
+import plugin from "preline/plugin";
 import { Config } from "tailwindcss";
 
 export default {
-    content: ["./src/**/*.{html,js,tsx,ts}"],
+    content: ["./src/**/*.{html,js,tsx,ts}", "node_modules/preline/dist/*.js"],
     mode: "jit",
     theme: {
         extend: {
@@ -13,5 +14,5 @@ export default {
         }
     },
     darkMode: ["class", '[data-mode="dark"]'],
-    plugins: []
+    plugins: [plugin]
 } satisfies Config;

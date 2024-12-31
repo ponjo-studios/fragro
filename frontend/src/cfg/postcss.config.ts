@@ -1,8 +1,8 @@
-import tailwind from "tailwindcss";
+import tailwindConfig from "./tailwind.config";
 import autoprefixer from "autoprefixer";
 import cssnanoPlugin from "cssnano";
+import tailwind from "tailwindcss";
 
-import tailwindConfig from "./tailwind.config";
 const dev = process.env.NODE_ENV !== "production";
 
 export default {
@@ -15,9 +15,10 @@ export default {
             autoprefixer()
         ];
 
-        !dev && cssnanoPlugin({
-            preset: "default"
-        });
+        !dev &&
+            cssnanoPlugin({
+                preset: "default"
+            });
 
         return plugins;
     })()

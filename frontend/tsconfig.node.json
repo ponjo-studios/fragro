@@ -7,8 +7,8 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "vite.config.ts",
-    "cfg/postcss.config.ts",
-    "cfg/tailwind.config.ts"
+    "frontend/vite.config.ts",
+    "frontend/src/cfg/postcss.config.ts",
+    "frontend/src/cfg/tailwind.config.ts"
   ]
 }
