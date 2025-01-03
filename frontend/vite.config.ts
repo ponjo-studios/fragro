@@ -9,6 +9,6 @@ export default defineConfig(async () => ({
         react(),
         tsconfigPaths()
     ],
-
+    base: "/fragro/",
     css: { postcss },
 }));
