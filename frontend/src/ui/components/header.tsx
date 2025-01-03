@@ -2,8 +2,8 @@ import { FC, PropsWithChildren, ReactNode } from "react";
 
 const Header: FC<PropsWithChildren> = ({ children }) => {
     return (
-        <nav className="sticky top-0 z-50 bg-gradient-to-br from-emerald-600 to-green-400">
-            <div className="max-w-[85rem] w-full mx-auto sm:flex sm:flex-row sm:justify-between sm:items-center sm:gap-x-3 py-3 px-4 sm:px-6 lg:px-8 text-[#ffff]">
+        <nav className="bg-gradient-to-br from-emerald-600 to-green-400">
+            <div className="max-w-[85rem] w-full mx-auto sm:flex sm:justify-between sm:items-center sm:gap-x-3 py-3 px-4 sm:px-6 lg:px-8 text-white">
                 {children}
             </div>
         </nav>

@@ -3,13 +3,14 @@ import { LuHouse } from "react-icons/lu";
 
 const NavbarContainer: FC<PropsWithChildren> = ({ children }) => {
     return (
-        <header className="sticky top-0 px-2 bg-gray-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-0 border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 shadow-md">
+        <header className="sticky top-0 px-2 bg-transparent backdrop-blur-[8px] flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-2 md:py-0 shadow-lg rounded-b-2xl border-gray-200 dark:border-neutral-700">
             <nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 px-4 py-2 md:py-2 sm:px-6 lg:px-8">
                 {children}
             </nav>
         </header>
     );
 };
+
 
 const NavbarBranding: FC = () => {
     return (
@@ -20,7 +21,7 @@ const NavbarBranding: FC = () => {
                 aria-label="Brand"
             >
                 <img
-                    src={"/wordframe-light.svg"}
+                    src={"/wordframe-dark.svg"}
                     alt="Logo"
                     className="h-8 mr-2"
                 />
@@ -28,7 +29,7 @@ const NavbarBranding: FC = () => {
 
             <button
                 type="button"
-                className="bg-gradient-to-br from-emerald-400 to-green-600 hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border-2 border-emerald-700 text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="bg-gray-200 hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-400 text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 id="hs-header-base-collapse"
                 aria-expanded="false"
                 aria-controls="hs-header-base"
@@ -83,7 +84,7 @@ const NavbarItemContainer: FC = () => {
                     <div className="grow">
                         <div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
                             <a
-                                className="py-2 md:px-2 flex items-center text-white hover:text-green-300 hover:bg-gray-600 duration-300 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                                className="py-2 md:px-2 flex items-center hover:bg-gray-100 duration-300 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                                 href="#"
                                 aria-current="page"
                             >
@@ -99,7 +100,7 @@ const NavbarItemContainer: FC = () => {
                                 <button
                                     id="hs-header-base-mega-menu-fullwidth"
                                     type="button"
-                                    className="hs-dropdown-toggle w-full py-2 md:px-2 flex items-center text-md text-white hover:text-green-400 rounded-lg focus:outline-none dark:text-neutral-200 hover:bg-gray-600 dark:focus:bg-neutral-700"
+                                    className="hs-dropdown-toggle w-full py-2 md:px-2 flex items-center text-md hover:bg-gray-100 duration-300 rounded-lg focus:outline-none dark:text-neutral-200 dark:focus:bg-neutral-700"
                                     aria-haspopup="menu"
                                     aria-expanded="false"
                                     aria-label="Mega Menu"
@@ -165,10 +166,10 @@ const NavbarItemContainer: FC = () => {
                                                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             Support Docs
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Explore advice and
                                                             explanations for all
                                                             of Preline's
@@ -203,10 +204,10 @@ const NavbarItemContainer: FC = () => {
                                                         <path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3" />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             Integrations
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Discover the huge
                                                             range of tools that
                                                             Preline integrates
@@ -243,10 +244,10 @@ const NavbarItemContainer: FC = () => {
                                                         />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             API Reference
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Build custom
                                                             integrations with
                                                             our first-class API.
@@ -281,10 +282,10 @@ const NavbarItemContainer: FC = () => {
                                                         <path d="M12 17h.01" />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             Help Center
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Learn how to
                                                             install, set up, and
                                                             use Preline.
@@ -316,10 +317,10 @@ const NavbarItemContainer: FC = () => {
                                                         <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             Developer Hub
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Learn how to
                                                             integrate or build
                                                             on top of Preline.
@@ -353,10 +354,10 @@ const NavbarItemContainer: FC = () => {
                                                         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                                     </svg>
                                                     <div className="grow">
-                                                        <p className="font-medium text-sm text-gray-800 dark:text-neutral-200">
+                                                        <p className="font-medium text-md text-gray-800 dark:text-neutral-200">
                                                             Community Forum
                                                         </p>
-                                                        <p className="text-sm text-gray-500 dark:text-neutral-500">
+                                                        <p className="text-md text-gray-500 dark:text-neutral-500">
                                                             Learn, share, and
                                                             connect with other
                                                             Preline users.
@@ -366,7 +367,7 @@ const NavbarItemContainer: FC = () => {
                                             </div>
 
                                             <div className="mt-2 flex flex-col">
-                                                <span className="ms-2.5 mb-2 font-semibold text-xs uppercase text-gray-800 dark:text-neutral-200">
+                                                <span className="ms-2.5 mb-2 font-semibold text-sm uppercase text-gray-800 dark:text-neutral-200">
                                                     Customer stories
                                                 </span>
 
@@ -380,7 +381,7 @@ const NavbarItemContainer: FC = () => {
                                                         alt="Avatar"
                                                     />
                                                     <div className="grow">
-                                                        <p className="text-sm text-gray-800 dark:text-neutral-400">
+                                                        <p className="text-md text-gray-800 dark:text-neutral-400">
                                                             Preline Projects has
                                                             proved to be most
                                                             efficient cloud
@@ -388,7 +389,7 @@ const NavbarItemContainer: FC = () => {
                                                             tracking and bug
                                                             tracking tool.
                                                         </p>
-                                                        <p className="mt-3 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-400">
+                                                        <p className="mt-3 inline-flex items-center gap-x-1 text-md text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-400">
                                                             Learn more
                                                             <svg
                                                                 className="shrink-0 size-4"
@@ -417,7 +418,7 @@ const NavbarItemContainer: FC = () => {
                                                         alt="Avatar"
                                                     />
                                                     <div className="grow">
-                                                        <p className="text-sm text-gray-800 dark:text-neutral-400">
+                                                        <p className="text-md text-gray-800 dark:text-neutral-400">
                                                             Preline Projects has
                                                             proved to be most
                                                             efficient cloud
@@ -425,7 +426,7 @@ const NavbarItemContainer: FC = () => {
                                                             tracking and bug
                                                             tracking tool.
                                                         </p>
-                                                        <p className="mt-3 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-400">
+                                                        <p className="mt-3 inline-flex items-center gap-x-1 text-md text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-400">
                                                             Learn more
                                                             <svg
                                                                 className="shrink-0 size-4"
@@ -458,13 +459,13 @@ const NavbarItemContainer: FC = () => {
 
                     <div className="flex flex-wrap items-center mt-2 md:mt-0 gap-x-1.5">
                         <a
-                            className="bg-green-500 py-[5px] px-2.5 inline-flex items-center font-medium  rounded-lg border border-gray-600 text-[#ffff] shadow-sm hover:bg-green-400 duration-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            className="bg-green-500 py-[5px] px-2.5 inline-flex items-center font-medium  rounded-lg border border-gray-300 text-[#ffff] shadow-sm hover:bg-green-400 duration-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                             href="#"
                         >
                             Sign in
                         </a>
                         <a
-                            className="bg-sky-500 py-[5px] px-2.5 inline-flex items-center font-medium  rounded-lg border border-gray-600 text-[#ffff] shadow-sm hover:bg-sky-400 duration-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            className="bg-sky-500 py-[5px] px-2.5 inline-flex items-center font-medium  rounded-lg border border-gray-300 text-[#ffff] shadow-sm hover:bg-sky-400 duration-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                             href="#"
                         >
                             Sign up
