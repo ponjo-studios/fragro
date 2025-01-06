@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "types": ["bun-types"]
+    },
+    "include": ["test"]
+}

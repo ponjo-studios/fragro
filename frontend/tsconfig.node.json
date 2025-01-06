@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "./vite.config.ts",
+        "./src/cfg/postcss.config.ts",
+        "./src/cfg/tailwind.config.ts"
+    ]
+}
