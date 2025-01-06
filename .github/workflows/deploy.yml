@@ -18,7 +18,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        uses: cd frontend && bun install
+        run: cd frontend && bun install
 
       - name: Build project
         run: cd frontend && bun run build
